@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-color: azure;
+}
+:root{
+    --primaryColor: rgb(140, 45, 230);
+    --mainWhite: #fff;
+}
+.section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    border: 1px solid var(--primaryColor);
+    width: 100%;
+    max-width: 60%;
+    border-radius: 0.6rem;
+    background-color: var(--primaryColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section1-container{
+    border: 1px solid var(--primaryColor);
+    width: 100%;
+    max-width: 50%;
+    margin-right: auto;
+    border-radius: 0.6rem 0 0 0.6rem;
+    color: var(--primaryColor);
+    padding: 1rem;
+    background-color: var(--mainWhite);
+}
+.h2{
+    margin-bottom: 2.5rem;
+}
+.Degree-label{
+    font-weight: bold;
+}
+.input-cont{
+    width: 100%;
+    display: flex;
+    margin-bottom: 2rem;
+}
+.input{
+    width: 100%;
+    max-width: 15rem;
+    border-color: var(--primaryColor);
+    border-radius: 0.2rem 0 0 0.2rem;
+    outline: none;
+    padding: 0.3rem;
+}
+.Degree-select{
+    border-color: var(--primaryColor);
+    border-radius: 0 0.2rem 0.2rem 0;
+    outline: none;
+}
+
+.Degree-select2{
+    width: 100%;
+    max-width: 17.5rem;
+    border: 1px solid var(--primaryColor);
+    border-radius: 0.2rem;
+    padding: 0.3rem;
+    outline: none;
+    margin-bottom: 3rem;
+}
+.btn-cont{
+    width: 100%;
+    max-width: 12rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn{
+    padding: 0.4rem 1.5rem;
+    border-radius: 1rem;
+    color: var(--mainWhite);
+    background-color: var(--primaryColor);
+    outline: none;
+    border: none;
+}
+
+
+.section2-container{
+    width: 100%;
+    max-width: 50%;
+    background-color: var(--primaryColor);
+}
+.section2-container{
+    width: 100%;
+    text-align: center;
+    color: var(--mainWhite);
+}
+.output-degree{
+    font-size: 0.8rem;
+    padding:-2rem;
+}
+
+
+
+@media screen and (max-width:425px) {
+    .container{
+        max-width: 100%;
+        margin: 1rem;
+    }
+    .section1-container{
+        max-width: 100%;
+    }
+    .h2{
+        font-size: 1rem;
+    }
+    .Degree-label{
+        font-size: 0.8rem;
+    }
+    
+    .btn-cont{
+        max-width: 7.5rem;
+    }
+    .btn{
+        font-size: 0.5rem;
+        padding: 0.4rem 1rem;
+    }
+    .section2-container{
+        width: 100%;
+        max-width: 100%;
+    }
+}
